@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Running build automation update'
-                sh './gradlew build'
+                mvn clean install
             }
         }
     }
