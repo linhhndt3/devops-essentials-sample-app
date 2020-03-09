@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Running build automation'
+                echo 'Running build automation update'
                 mvn clean install
             }
         }
