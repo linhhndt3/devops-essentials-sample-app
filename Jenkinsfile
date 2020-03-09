@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Running build automation update'
-                sh 'mvn --version'
+                sh 'mvn clean install'
             }
         }
     }
